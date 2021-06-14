@@ -7,12 +7,7 @@ then
         echo "Rebuilding $EXEC..."
         $CC $SRC -o $EXEC
 fi
-
-FIRST=$1
-SECOND=$2
-
-./vzemibitna $FIRST $SECOND
-
+./$EXEC $1 $2
 RET=$?
 
 if [ $RET -eq 0 ]
