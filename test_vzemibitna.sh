@@ -1,4 +1,12 @@
 #!/bin/bash
+CC=gcc
+EXEC=vzemibitna
+SRC=vzemibitna.c
+if [ "$SRC" -nt "$EXEC" ]
+then
+        echo "Rebuilding $EXEC..."
+        $CC $SRC -o $EXEC
+fi
 
 FIRST=$1
 SECOND=$2
