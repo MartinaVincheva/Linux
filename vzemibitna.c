@@ -37,6 +37,6 @@ int main(int argc, char* argv[])
     {
 		exit(1); /* Position must be a positive number */
 	}
-	printf("%d\n", vzemiBitna(number,position));
+	printf("In %d the bit on position %d is: %d\n",number, position, vzemiBitna(number,position));
     return(0); /* Test passed */
 }
