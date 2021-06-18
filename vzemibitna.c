@@ -25,7 +25,7 @@ void validateNumber(char *inString)
 
 int main(int argc, char* argv[])
 {
-    if (argc < 3)
+    if (argc != 3)
     {
         exit(2); /* Two arguments needed */
     }
