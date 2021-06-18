@@ -1,4 +1,14 @@
 #!/bin/bash
+CC=gcc
+EXEC=areaecl
+SRC=areaEclipse.c
+if [ "$SRC" -nt "$EXEC" ]
+then
+        echo "Rebuilding $EXEC..."
+        $CC $SRC -o $EXEC
+fi 
+./$EXEC $1 $2
+RET=$?
 FIRST=$1
 SECOND=$2
 
