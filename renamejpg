@@ -1,0 +1,4 @@
+#!/bin/sed 
+for fn in *.jpg
+	do mv $fn ‘echo $fn | sed ‘s/[0-9]-[0-9]-[0-9]/\3-\2-\1/’ ’
+done
