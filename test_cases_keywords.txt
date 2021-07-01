@@ -1,0 +1,6 @@
+auto
+2
+register
+char
+5
+mom
